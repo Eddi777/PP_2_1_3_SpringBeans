@@ -14,7 +14,11 @@ public class Application {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
+            System.out.println(bean.getTimer().getTime());
         }
     }
 
 }
+
+//        4) На основе класса Timer создайте бин. Свяжите с AnimalCage. Проверьте, что при выполнении метода main время, которое пишет таймер, одно и тоже.
+//        5) Раскоментировать тест из заготовки и проверить своё решение.
